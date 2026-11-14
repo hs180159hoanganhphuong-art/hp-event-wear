@@ -321,3 +321,21 @@ h1 .orange,h2 .orange{color:var(--orange)}
 .screen.dark .btn-light,.band .btn-light{border-color:#fff;color:#fff}.band .btn-light:hover{background:#fff;color:var(--orange)}
 .hero{background:var(--paper)}
 #products{background:#fff}#fabric{background:#fff}
+
+/* ===== nhịp dọc gọn hơn: bớt khoảng trắng giữa các section ===== */
+.screen{min-height:0;padding:64px 0}
+.hero,.hero-grid{min-height:0}
+.hero-grid{padding-block:44px}
+.hero-photo{height:min(62svh,600px)}
+.photo-grid{height:min(60svh,560px)}
+.fabric-photos{height:min(58svh,520px)}
+.steps{margin:32px 0 32px}
+.step .num{margin-bottom:32px}
+.band .container{padding-block:52px}
+.section{padding:64px 0}.section-sm{padding:40px 0}
+.subhero{padding:60px 0 52px}
+.site-footer{padding:48px 0 24px}
+.event-list{margin:22px 0 24px}
+.tabs{margin:20px 0 18px}.pick-name{margin-bottom:14px}.pick-spec{margin-bottom:20px}
+@media(max-width:1100px){.screen{padding:56px 0}.photo-grid,.fabric-photos{height:auto}.hero-photo{height:46svh}}
+@media(max-width:640px){.screen,.section{padding:48px 0}.hero-photo{height:40svh}.band .container{padding-block:44px}}

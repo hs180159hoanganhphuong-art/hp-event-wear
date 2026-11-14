@@ -41,3 +41,9 @@ Mở `http://localhost:8080`.
 ## AI Fitting & phông chữ
 - AI Fitting ghép áo từ mockup (ảnh phôi đã tách nền `<mau>-cut.webp` + logo khách) lên ảnh khách; Auto Fit dò vai người trong ảnh. Logic nằm cuối `assets/js/app.js`.
 - Phông chữ trong `assets/fonts/`: LF Negrita Pro (tiêu đề h1–h6, tên thương hiệu, số liệu) và LF Study Notes (văn bản). Khai báo ở cuối `assets/css/style.css`, đổi qua biến `--font-head` và `--font-body`.
+
+## Triển khai & SEO
+- Domain chính: `https://www.hpeventwear.id.vn/` (Vercel tự chuyển `hpeventwear.id.vn` sang `www` nhờ `vercel.json`).
+- `robots.txt` và `sitemap.xml` nằm ở thư mục gốc. Khi thêm trang hoặc bài viết mới, thêm địa chỉ vào `sitemap.xml` và cập nhật `lastmod`.
+- Mỗi trang có `title`, `description`, `canonical`, Open Graph riêng. Trang bài viết tự đổi theo từng bài trong `assets/js/articles.js`.
+- Các trang `ai-color/ai-mockup/ai-size/ai-fitting` chỉ chuyển hướng về AI Studio, đã gắn `noindex`.
